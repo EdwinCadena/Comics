@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>COMICS</title>
+    <!-- Leo los archivos de precarga para JavaScript en Backend y CSS en Frontend 
+         de dar estilos al documento web -->
     <script src="./script/javascript.js"></script>
     <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
+<!-- Especifíco que se debe ejecutar la función Imprimiendo al momento de cargar el body (cuerpo
+     del documento web) -->
 <body onload="imprimiendo()">
+    <!-- Creo un menú, dentro de este creo un botón encargado de re imprimir el comic -->
     <menu id="menu">
         <br>
         <button id='recargar' onclick="imprimiendo()"><b>Recargar</b></button>
         <br><br>
     </menu>
+    <!-- Creo una tabla dividida por 'título','comic' y 'puntuar comic' -->
     <table>
         <tr>
             <td><div id="titulo"></div></td>
@@ -31,6 +37,8 @@
     </table>
 
     <br><br>
+
+    <!-- Establezco una pequeña sección para mostrar la puntuación actual de los comics -->
     
     <div id="puntuaciones">
         <b id="comic1"></b>

@@ -1,3 +1,4 @@
+// Defino variables globales, comics(contenedor de los comics y sus características) y com(guarda el comic seleccionado actualmente)
 var comics = {
     comic1 : {
         "month": "7", 
@@ -31,6 +32,7 @@ var comics = {
 
 var com;
 
+// Defino la función comic, encargada de seleccionar un comic al azar
 function comic(){
     num = Math.random()*(3-1)+1
     num = Math.floor(num)
@@ -41,6 +43,7 @@ function comic(){
     }
 }
 
+// Defino la función imprimiendo encargada de mostrar los datos requeridos del comic en la página web
 function imprimiendo(){
 
     comic()
@@ -67,6 +70,7 @@ function imprimiendo(){
     padre.appendChild(hijo)
 }
 
+// Defino la fución puntuación encargada de guardar la puntuación en el atributo score del comic seleccionado
 function puntuacion(){
     var calificacion = parseInt(document.getElementById('score').value)
     if(validarPuntuacion(calificacion)){
@@ -80,6 +84,7 @@ function puntuacion(){
     }
 }
 
+// Defino la función mostrarPuntuación encargada de actualizar en pantalla la puntuación actual de cada comic
 function mostrarPuntuacion(){
     var padre = document.getElementById('puntuaciones')
     
@@ -100,6 +105,7 @@ function mostrarPuntuacion(){
     padre.appendChild(texto)
 }
 
+// Defino la función encargada de validar que la puntuación que el usuario ha puesto está entre el rango 0 a 100
 function validarPuntuacion(ingreso){
     valido = true
     if (ingreso>100 || ingreso <0){
