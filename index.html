@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./script/javascript.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body onload="imprimiendo()">
+    <menu id="menu">
+        <br>
+        <button id='recargar' onclick="imprimiendo()"><b>Recargar</b></button>
+        <br><br>
+    </menu>
+    <table>
+        <tr>
+            <td><div id="titulo"></div></td>
+        </tr>
+        <tr>
+            <td><div id="imagen"><img id="imagendiv"></div></td>
+        </tr>
+        <tr>
+            <td><div>
+                    <h2>Por favor su opinión nos importa, califique este comic</h2>
+                    <input type="text" id="score">
+                    <button onclick="puntuacion()">Submit</button>
+                </div></td>
+        </tr>
+    </table>
+
+    <br><br>
+    
+    <div id="puntuaciones">
+        <b id="comic1"></b>
+        <b id="comic2"></b>
+    </div>
+    <br><br>
+</body>
+</html>
+
+</html>

@@ -1,0 +1,21 @@
+*{
+    text-align: center;
+    color: blue;
+}
+body{
+    background-image: url('https://www.astiberri.com/spree/products/91/original/entenderelcomic.jpg?1432724912');
+    background-size: 100%;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: black;
+}
+td{
+    border: 5px solid;
+    padding: 20px 30px;
+}
+#recargar,#comic1,#comic2{
+    padding: 20px 30px;
+    background-color: black;
+}
